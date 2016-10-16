@@ -51,28 +51,26 @@
 
 	<ul class="nav-justified">
 		<li><div class="card ">
-				<img class="card-img-top" src="${img}/1.jpg" alt="Card image cap" style="height: 400px;padding:10%; width: 100%; overflow: hidden; cursor: pointer">
+				<img class="card-img-top" src="${img}/4.jpg" alt="Card image cap" style="height: 300px;padding:8%; width: 100%; overflow: hidden; cursor: pointer">
 				<div class="card-block">
-					<h4 class="card-title">Mac Books</h4>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
-					<a href="<c:url value="view" />" class="btn btn-primary">View</a>
+					<h4 class="card-title">iPhone</h4>
+					<p class="card-text">We having different types of iPhones available just click on view button to get more informaton about it.</p>
+					<a href="<c:url value="iphone" />" id="iphn" class="btn btn-primary">View</a>
+					
 				</div></div></li>
 		<li><div class="card">
-				<img class="card-img-top" src="${img}/3.jpg" alt="Card image cap" style="height: 400px;padding:10%; width: 100%; overflow: hidden; cursor: pointer">
+				<img class="card-img-top" src="${img}/5.jpg" alt="Card image cap" style="height: 300px;padding:8%; width: 100%; overflow: hidden; cursor: pointer">
 				<div class="card-block">
-					<h4 class="card-title">iPhones</h4>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
-					<a href="<c:url value="view" />" class="btn btn-primary">View</a>
+					<h4 class="card-title">iPad</h4>
+					<p class="card-text">We having different types of iPads available just click on view button to get more informaton about it.</p>
+					<a href="<c:url value="ipad" />" id="ipad"class="btn btn-primary">View</a>
 				</div></div></li>
 		<li><div class="card">
-				<img class="card-img-top" src="${img}/2.jpg" alt="Card image cap" style="height: 400px;padding:10%; width: 100%; overflow: hidden; cursor: pointer">
+				<img class="card-img-top" src="${img}/6.jpg" alt="Card image cap" style="height: 300px;padding:8%; width: 100%; overflow: hidden; cursor: pointer">
 				<div class="card-block">
-					<h4 class="card-title">iPads</h4>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
-					<a href="<c:url value="view" />" class="btn btn-primary">View</a>
+					<h4 class="card-title">Mac Book</h4>
+					<p class="card-text">We having different types of MacBooks available just click on view button to get more informaton about it.</p>
+					<a href="<c:url value="mac" />" id="mac"class="btn btn-primary">View</a>
 				</div>
 				</div></li>
 	</ul>

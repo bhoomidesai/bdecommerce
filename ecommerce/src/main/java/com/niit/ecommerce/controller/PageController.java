@@ -1,6 +1,7 @@
 package com.niit.ecommerce.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,8 +34,31 @@ public class PageController {
 		return mv;
 	}
 	@RequestMapping(value = { "/view"})
-	public ModelAndView view() {
+	public ModelAndView viewall() {
 		ModelAndView mv = new ModelAndView("viewitems");
+		return mv;
+	}
+	/*@RequestMapping(value = { "/viewipad"})
+	public ModelAndView viewipad() {
+		ModelAndView mv = new ModelAndView("viewitems");
+		mv.addObject("pro", "ipad");
+		return mv;
+	}
+	@RequestMapping(value = {"/viewiphone"})
+	public ModelAndView viewiphn() {
+		ModelAndView mv = new ModelAndView("viewitems");
+		mv.addObject("pro", "iphone");
+		return mv;
+	}*/
+	@RequestMapping(value = {"/{pro}"})
+	public ModelAndView viewmac(@PathVariable("pro") String q) {
+		ModelAndView mv = new ModelAndView("viewitems");
+		mv.addObject("pro", q);
+		return mv;
+	}
+	@RequestMapping(value = {"/viewdetail"})
+	public ModelAndView viewdetail() {
+		ModelAndView mv = new ModelAndView("viewdetail");
 		return mv;
 	}
 }

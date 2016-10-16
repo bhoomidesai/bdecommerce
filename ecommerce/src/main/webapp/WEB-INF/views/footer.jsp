@@ -3,6 +3,7 @@
     <hr />
   
     <div class="row">
+    
         <div class="col-lg-12">
             <ul class="nav nav-pills nav-justified">
                 <li><a href="/">© 2016 iStore</a></li>

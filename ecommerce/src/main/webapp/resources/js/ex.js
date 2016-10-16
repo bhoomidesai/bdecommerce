@@ -1,15 +1,15 @@
 
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
     $scope.names = [
-        {name:'Jani',brand:'lg'},
-        {name:'Carl',brand:'lg'},
-        {name:'Margareth',brand:'lg'},
-        {name:'Hege',brand:'lg'},
-        {name:'Joe',brand:'index'},
-        {name:'Gustav',brand:'Sweden'},
-        {name:'Birgit',brand:'Denmark'},
-        {name:'Mary',brand:'England'},
-        {name:'Kai',brand:'Norway'}
+        {name:'6s',brand:'iphone'},
+        {name:'7',brand:'iphone'},
+        {name:'pro',brand:'mac'},
+        {name:'mini',brand:'ipad'},
+        {name:'gold',brand:'mac'},
+        {name:'mini',brand:'ipad'},
+        {name:'7 plus',brand:'iphone'},
+        {name:'mini',brand:'ipad'},
+        {name:'air',brand:'mac'}
         ];
     $scope.orderByMe = function(x) {
         $scope.myOrderBy = x;

@@ -5,7 +5,9 @@
 </jsp:include>
 
 
-	<div class="container" style="height: 500px; width: 100%; align: center;" >
+	<div class="row">
+	<div class="col-md-4"><div>
+	<div class="col-md-4"></div>
 	<table>
 		<th><label>Login</label></th>
 		<tr><div class="form-group" align="center">
@@ -21,8 +23,8 @@
 		<td><button type="button" class="btn btn-primary btn-md">Login</button></td>
 		</tr>
 		</table>
+<div class="col-md-4"></div>
 </div>
-
 <jsp:include page="footer.jsp">
 	<jsp:param name="" value="" />
 </jsp:include>
