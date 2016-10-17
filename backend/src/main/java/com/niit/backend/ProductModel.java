@@ -1,6 +1,19 @@
 package com.niit.backend;
 
-public class Product {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Product")
+public class ProductModel {
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	public
 	int id;
 	String name;
 	int price;
@@ -28,6 +41,10 @@ public class Product {
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+	@Override//for dibugging
+	public String toString() {
+		return "ProductController [id=" + id + ", name=" + name + ", price=" + price + ", desc=" + desc + "]";
 	}
 	
 }

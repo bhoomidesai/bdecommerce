@@ -61,4 +61,9 @@ public class PageController {
 		ModelAndView mv = new ModelAndView("viewdetail");
 		return mv;
 	}
+	@RequestMapping(value = {"/cart"})
+	public ModelAndView cart() {
+		ModelAndView mv = new ModelAndView("cart");
+		return mv;
+	}
 }
