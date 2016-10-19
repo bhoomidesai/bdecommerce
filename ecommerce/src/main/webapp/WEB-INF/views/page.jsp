@@ -1,4 +1,6 @@
-<%@taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<c:set var="cp" value="${pageContext.request.contextPath}"/>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <spring:url value="/resources/images" var="img" />
 <jsp:include page="header.jsp">
@@ -7,7 +9,7 @@
 
 <div id="myContainer"
 	style="height: 500px; width: 100%; overflow: hidden; cursor: pointer">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>

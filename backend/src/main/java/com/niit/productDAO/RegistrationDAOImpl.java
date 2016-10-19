@@ -2,44 +2,41 @@ package com.niit.productDAO;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.backend.ProductModel;
-
+import com.niit.backend.Registration;
 @Repository
 @Transactional
-public class ProductDAOImpl implements ProductDAO {
+public class RegistrationDAOImpl implements RegistrationDAO{
 	@Autowired	
 	private SessionFactory sessionFactory;
 	
 	
-	public void insert(ProductModel p) {
+	public void insert(Registration p) {
 		sessionFactory.getCurrentSession().persist(p);
 	}
 	
-	public List<ProductModel> getAll() {
+	public List<Registration> getAll() {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().createQuery("FROM ProductModel").list();
+		return sessionFactory.getCurrentSession().createQuery("FROM Registration").list();
 	}
 
-	public void update(ProductModel p) {
+	public void update(Registration p) {
 		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().update(p);
 	}
 
-	public ProductModel getById(int id) {
+	public Registration getById(int id) {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().get(ProductModel.class,id);
-	}
+		return sessionFactory.getCurrentSession().get(Registration.class,id);
+		}
 
 	public void delete(int id) {
 		// TODO Auto-generated method stub
-		sessionFactory.getCurrentSession().delete(getById(id));		}
+		sessionFactory.getCurrentSession().delete(getById(id));
 	}
+
+}

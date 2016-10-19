@@ -19,7 +19,7 @@
 				id="ex3" type="password" placeholder="Password" style="hight: 100px; width: 100%;">
 		</div>
 		<div class="panel-body">
-			<td><button type="button" class="btn btn-primary btn-md">Login</button></td>
+			 <button type="button" class="btn btn-primary btn-md">Login</button>
 		</div>
 	</div>
 </div>

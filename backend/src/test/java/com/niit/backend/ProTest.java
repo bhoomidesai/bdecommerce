@@ -2,8 +2,7 @@ package com.niit.backend;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.niit.*;
-import com.niit.productDAO.ProductDAO;
+import com.niit.productDAO.RegistrationDAO;
 
 
 public class ProTest {
@@ -13,13 +12,14 @@ public class ProTest {
      AnnotationConfigApplicationContext ctxt = new AnnotationConfigApplicationContext();
      ctxt.scan("com.niit");
      ctxt.refresh();
-     ProductDAO productDAO = ctxt.getBean(ProductDAO.class);
-     ProductModel p = new ProductModel();
-     p.setId(1);
-     p.setName("iPhone");
-     p.setPrice(23390);
-     p.setDesc("7 plus");
-     productDAO.insert(p);
+     RegistrationDAO cDAO = ctxt.getBean(RegistrationDAO.class);
+     
+     Registration c = new Registration();
+     c.setUname("Bhoomi");
+     c.setEmail("bhoomi.desai21@gmail.com");
+     c.setPwd("123");
+     c.setAddress("Baroda");
+     cDAO.insert(c);
      ctxt.close();
 	}
 

@@ -1,8 +1,9 @@
-<%@taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <spring:url value="/resources/css" var="css" />
 <spring:url value="/resources/js" var="js" />
 <spring:url value="/resources/images" var="img" />
+<c:set var="cp" value="${pageContext.request.contextPath}"/>
 
 
 <script
@@ -32,6 +33,7 @@
 				<li><a href="<c:url value="contact" />">Contact Us</a></li>
 				<li><a href="<c:url value="about" />">About Us</a></li>
 				<li><a href="<c:url value="view" />">View all</a></li>
+				<li><a href="<c:url value="a/admin" />">Admin</a></li>
 				
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

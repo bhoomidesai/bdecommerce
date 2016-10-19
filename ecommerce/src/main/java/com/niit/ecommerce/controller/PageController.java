@@ -56,14 +56,21 @@ public class PageController {
 		mv.addObject("pro", q);
 		return mv;
 	}
-	@RequestMapping(value = {"/viewdetail"})
-	public ModelAndView viewdetail() {
-		ModelAndView mv = new ModelAndView("viewdetail");
+	@RequestMapping(value = {"a/admin"})
+	public ModelAndView gotoadmin() {
+		ModelAndView mv = new ModelAndView("admin");
 		return mv;
 	}
 	@RequestMapping(value = {"/cart"})
 	public ModelAndView cart() {
 		ModelAndView mv = new ModelAndView("cart");
 		return mv;
+	}@RequestMapping(value = {"/ecommerce{id1}"})
+	public ModelAndView viewdetail(@PathVariable("id1") String q) {
+		ModelAndView mv = new ModelAndView("viewdetail");
+		mv.addObject("id1", q);
+		return mv;
 	}
+	
+	
 }
