@@ -56,11 +56,7 @@ public class PageController {
 		mv.addObject("pro", q);
 		return mv;
 	}
-	@RequestMapping(value = {"a/admin"})
-	public ModelAndView gotoadmin() {
-		ModelAndView mv = new ModelAndView("admin");
-		return mv;
-	}
+	
 	@RequestMapping(value = {"/cart"})
 	public ModelAndView cart() {
 		ModelAndView mv = new ModelAndView("cart");

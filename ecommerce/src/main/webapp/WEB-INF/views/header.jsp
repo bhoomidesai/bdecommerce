@@ -33,7 +33,7 @@
 				<li><a href="<c:url value="contact" />">Contact Us</a></li>
 				<li><a href="<c:url value="about" />">About Us</a></li>
 				<li><a href="<c:url value="view" />">View all</a></li>
-				<li><a href="<c:url value="a/admin" />">Admin</a></li>
+				<li><a href="<c:url value="admin/viewall" />">Admin</a></li>
 				
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

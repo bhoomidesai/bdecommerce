@@ -8,17 +8,16 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.niit.backend.ProductModel;
 import com.niit.backend.Registration;
 @Controller	
 public class FormValidatorController {
-	@RequestMapping(value="/admin/insert", method=RequestMethod.POST)
-    public String submitForm(@Valid Registration sub, BindingResult result, Model m) {
+	@RequestMapping(value="/admin/insert1", method=RequestMethod.POST)
+    public String submitForm(@Valid ProductModel sub, BindingResult result, Model m) {
         if(result.hasErrors()) {
-            return "formPage";
-        }
-         
+            return "admin";
+        } 
         m.addAttribute("message", "Successfully saved User: " + sub.toString());
-        return "formPage";
+        return "admin";
     }
-
 }
